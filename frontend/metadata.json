@@ -1,6 +1,0 @@
-{
-  "name": "RetinaAI",
-  "description": "Next-generation AI-assisted retinal image screening and pre-diabetes risk assessment platform for clinical specialists.",
-  "requestFramePermissions": ["camera"],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
