@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Datasets
+dataset/
+dataset_balanced/
+train_images/
+test_images/
+IDRiD_curated/
+
+# Model checkpoints
+*.pth
+*.pt
+*.h5
+*.hdf5
+
+# Frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/

@@ -1,0 +1,84 @@
+Hi Tanvi Sharma, Prajwal here This is your today's task 
+ 
+ step 1:
+ crate virtua; environment using command:
+ python3 -m venv venv
+ source venv/bin/activate
+
+Then, Install all required Lib:
+pip install torch torchvision
+pip install pandas numpy
+pip install scikit-learn
+pip install pillow
+pip install opencv-python
+pip install matplotlib
+pip install torch torchvision pandas numpy scikit-learn pillow opencv-python matplotlib
+
+
+
+ Step 2: 
+ After installing all Lib, open train.py and run the file from terminal(commands: python train.py or python3 train.py)
+ note: I have combine more images into dataset, so that new images will start training,
+and it usually takes time (at this time you can scroll reels, but don't slepp mennnn....)
+
+step 3:
+After training, you'll see something like:
+Epoch 1
+Train Acc: 60%
+Val Acc: 55%
+
+Epoch 2
+Train Acc: 70%
+Val Acc: 65%
+
+...
+
+Epoch 15
+Train Acc: 90%
+Val Acc: 78%
+
+The important thing is validation performance, because validation images weren't used to update the model's weights.
+
+
+step 4:
+Test the trained model into test_model.py file, and check the accuracy on test images. 
+You can also check the predictions on test images using predict.py.
+
+step 5:
+Create a confusion matrix
+
+                 Predicted
+              0   1   2   3   4
+Actual  0    350  20   5   0   0
+        1     30  50  10   0   0
+        2      5  10 210  15   2
+        3      0   2  20  40   5
+        4      0   0   3   5  60 
+
+This tells you which severity levels your model is confusing.
+For example, if Class 3 is frequently predicted as Class 2, that's important to know.
+
+
+
+step 6: check each class, because still we don't have enough images for types of diabetic
+0 → 1939 # No_DR
+1 → 390 # Mild
+2 → 1135 # Moderate
+3 → 267 # Severe
+4 → 344 # Proliferative
+
+
+step 7 :
+Once the model performs reasonably well, create:
+predict.py
+
+You should be able to give it:
+
+fundus_image.jpg
+
+and get:
+Prediction: Moderate Diabetic Retinopathy
+Confidence: 82%
+
+
+IMP Note: improve the model accuracy by using more images. Let me know, hum aur dataset download krke merge krte hain
